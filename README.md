@@ -1,4 +1,4 @@
-# Astro Starter Clon Portfolio
+# Astro Starter clone Portfolio
 
 ```sh
 git clone git@github.com:SophaHum/portfolio-site.git
