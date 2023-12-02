@@ -1,15 +1,13 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactCTA from "../components/ContactCTA.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+import Hero from "../components/Hero.astro";
+import Grid from "../components/Grid.astro";
 
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-import ContactCTA from '../components/ContactCTA.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
-import Hero from '../components/Hero.astro';
-import Grid from '../components/Grid.astro';
-
-const projects = (await getCollection('work')).sort(
-	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+const projects = (await getCollection("work")).sort(
+	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
 ---
 
@@ -19,11 +17,16 @@ const projects = (await getCollection('work')).sort(
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
-			<Hero
-				title="My Work"
-				tagline="See my most recent projects below to get an idea of my past experience."
-				align="start"
-			/>
+			<Hero title="My Work" <p>
+				Innovative, task-driven professional with 3+ years of experience
+				with software engineering and development across diverse.
+				Equipped with a record of success in consistently identifying
+				and providing the technological needs of companies through
+				ingenious innovation. Proficient in developing databases,
+				Creating user interface, writing and testing codes,
+				troubleshooting simple/complex issues, and implementing new
+				features based on user feedback.
+			</Hero>
 			<Grid variant="offset">
 				{
 					projects.map((project) => (

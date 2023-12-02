@@ -13,13 +13,12 @@ const textLinks: { label: string; href: string }[] = [
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
 	{ label: 'Twitter', href: 'https://twitter.com/Pha79025413', icon: 'twitter-logo' },
-	// { label: 'Twitch', href: 'https://twitch.tv/me', icon: 'twitch-logo' },
 	{ label: 'GitHub', href: 'https://github.com/SophaHum', icon: 'github-logo' },
-	// { label: 'CodePen', href: 'https://codepen.io/me', icon: 'codepen-logo' },
-	// { label: 'dribbble', href: 'https://dribbble.com/me', icon: 'dribbble-logo' },
-	// { label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo' },
 ];
 ---
+<header>
+	<p class="beta_title">This is the beta version </p>
+</header>
 
 <nav>
 	<div class="menu-header">
@@ -363,5 +362,17 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		.link.active {
 			color: SelectedItem;
 		}
+	}
+	.beta_title{
+		/* background-color: red; */
+		background-color:rgba(255, 0, 217, 0.614);
+		width: 100%;
+		text-align: center;
+	}
+	.nav-1{
+		height: 10px;
+		width: 100%;
+		/* border: 1px solid; */
+		
 	}
 </style>
